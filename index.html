@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>My React App</title>
+    <script
+      crossorigin
+      src="https://unpkg.com/react@17.0.2/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@17.0.2/umd/react-dom.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js"
+    ></script>
+    <link defer rel="stylesheet" href="index.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function MyComponent() {
+        return (
+          <div style={{  textAlign: 'center' }}>
+            <h1>About Us</h1>
+            <p>Verify that the React and ReactDOM scripts are loading correctly by checking the network tab in your browser's developer tools. Look for any errors or failed requests related to these scripts.
+
+Check the browser console for any error messages related to the code. If there are any syntax errors, they should appear here.
+
+Make sure that you are using the correct syntax for JSX. JSX is a syntax extension for JavaScript and requires a transpiler to convert it into regular JavaScript code that can be executed in the browser. You can use a tool like Babel to transpile your code before running it in the browser.
+
+Make sure that the ReactDOM.render() method is being called correctly and that the target element with an id of root exists on the page.</p>
+          </div>
+        );
+      }
+
+      ReactDOM.render(<MyComponent />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
